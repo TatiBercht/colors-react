@@ -7,6 +7,9 @@
     "httpster": "1.0.3",
     "react": "15.6.1",
     "react-dom": "15.6.1",
+    "react-icons": "2.2.5",
+    "react-redux": "5.0.5",
+    "redux": "3.7.0",
     "uuid": "3.1.0"
   },
   "devDependencies": {
@@ -21,9 +24,16 @@
     "enzyme": "2.8.2",
     "enzyme-to-json": "1.5.1",
     "jest": "20.0.4",
+    "jest-css-modules": "1.1.0",
+    "jest-enzyme": "3.2.0",
+    "node-sass": "4.5.3",
+    "optimize-css-assets-webpack-plugin": "2.0.0",
     "postcss-loader": "2.0.6",
+    "react-addons-test-utils": "15.6.0",
+    "sass-loader": "6.0.6",
     "style-loader": "0.18.2",
-    "webpack": "2.6.1"
+    "webpack": "2.6.1",
+    "webpack-dev-server": "2.4.5"
   },
   "scripts": {
     "build": "webpack --progress",
