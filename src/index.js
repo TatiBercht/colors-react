@@ -6,4 +6,4 @@ import './stylesheets/Menu.css'
 
 window.React = React
 
-render(<Menu recipes={data}/>, document.getElementById('react-container'))
+render(<App />, document.getElementById('react-container'))
