@@ -1,0 +1,59 @@
+{
+  "name": "colors",
+  "version": "1.0.0",
+  "description": "react colors app",
+  "main": "index.js",
+  "dependencies": {
+    "react": "15.6.1",
+    "react-dom": "15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "6.25.0",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.0.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "css-loader": "0.28.4",
+    "deep-freeze": "0.0.1",
+    "enzyme": "2.8.2",
+    "enzyme-to-json": "1.5.1",
+    "jest": "20.0.4",
+    "postcss-loader": "2.0.6",
+    "style-loader": "0.18.2",
+    "webpack": "2.6.1"
+  },
+  "scripts": {
+    "build": "webpack --progress",
+    "prestart": "npm run build",
+    "start": "open dist/index.html",
+    "test": "jest"
+  },
+  "jest": {
+    "setupFiles": [
+      "./__tests__/globals.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "globals.js"
+    ],
+    "verbose": true,
+    "collectCoverage": true,
+    "notify": true,
+    "collectCoverageFrom": [
+      "src/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
+      }
+    },
+    "moduleNameMapper": {
+      "\\.(scss)$": "<rootDir>/node_modules/jest-css-modules"
+    }
+  },
+  "author": "Tatiana Bercht",
+  "license": "ISC"
+}
