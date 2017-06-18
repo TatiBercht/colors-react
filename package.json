@@ -4,8 +4,10 @@
   "description": "react colors app",
   "main": "index.js",
   "dependencies": {
+    "httpster": "^1.0.3",
     "react": "15.6.1",
-    "react-dom": "15.6.1"
+    "react-dom": "15.6.1",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "babel-core": "6.25.0",
@@ -26,7 +28,7 @@
   "scripts": {
     "build": "webpack --progress",
     "prestart": "npm run build",
-    "start": "open dist/index.html",
+    "start": "open http://localhost:3000 & httpster -p 3000 -d ./dist",
     "test": "jest"
   },
   "jest": {
