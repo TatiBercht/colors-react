@@ -49,8 +49,7 @@
       "./__tests__/globals.js"
     ],
     "modulePathIgnorePatterns": [
-      "globals.js",
-      "./__tests__/components/containers/*"
+      "globals.js"
     ],
     "verbose": true,
     "collectCoverage": true,
