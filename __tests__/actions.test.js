@@ -1,5 +1,5 @@
 import storeFactory from '../src/store'
-import { sortColors, addColor, rateColor, removeColor } from '../src/actions'
+import { addColor, rateColor, removeColor } from '../src/actions'
 
 describe("Action Creators", () => {
 
@@ -92,27 +92,6 @@ describe("Action Creators", () => {
 
         it("should remove the color", () =>
             expect(store.getState().colors.length).toEqual(0))
-
-    })
-
-    describe("sortColors", () => {
-
-        beforeAll(() => store = storeFactory())
-
-        it("can dispatch sort colors", () => {
-            store.dispatch(sortColors("SORTED_BY_RATING"))
-            expect(store.getState().sort).toEqual("SORTED_BY_RATING")
-        })
-
-        it("can sort by title", () => {
-            store.dispatch(sortColors("SORTED_BY_TITLE"))
-            expect(store.getState().sort).toEqual("SORTED_BY_TITLE")
-        })
-
-        it("(default) sorts colors by date", () => {
-            store.dispatch(sortColors())
-            expect(store.getState().sort).toEqual("SORTED_BY_DATE")
-        })
 
     })
 

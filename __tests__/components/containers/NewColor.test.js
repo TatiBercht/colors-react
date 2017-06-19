@@ -1,4 +1,4 @@
-import { mount, shallow } from 'enzyme'
+import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
 import { NewColor } from '../../../src/components/containers'
 import { addColor } from '../../../src/actions'
@@ -8,7 +8,7 @@ jest.mock('../../../src/actions')
 
 describe("<NewColor /> Container ", () => {
 
-    let wrapper, result
+    let wrapper
     const _store = {
         dispatch: jest.fn(),
         subscribe: jest.fn(),

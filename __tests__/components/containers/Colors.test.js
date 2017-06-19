@@ -20,7 +20,7 @@ describe("<Colors /> Container ", () => {
 
     beforeAll(() => wrapper = mount(
       <Provider store={_store}>
-          <Colors />
+          <Colors colors={[]} match={{ params: { sort: 'rating' } } }/>
       </Provider>
     ))
 
@@ -35,13 +35,13 @@ describe("<Colors /> Container ", () => {
         ).toBe(3)
     })
 
-    it("sorts the colors by state", () => {
+    it("sorts the colors by rating", () => {
         expect(wrapper
             .find('ColorListMock')
             .props()
             .colors[0]
             .title
-        ).toBe("tomato")
+        ).toBe("lawn")
     })
 
     it("dispatches a REMOVE_COLOR action", () => {
